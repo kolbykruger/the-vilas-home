@@ -2,6 +2,21 @@
     text-align: center;
     user-select: none;
     z-index: 10;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    &.nav-left {
+        > ul > li {
+            margin-right: 2.5em;
+        }
+    }
+
+    &.nav-right {
+        > ul > li {
+            margin-left: 2.5em;
+        }
+    }
 
     ul {
         overflow: visible;
@@ -23,7 +38,7 @@
             overflow: hidden;
 
             a {
-                @include fs(13px);
+                @include fs(15px);
                 padding: 10px;
                 margin: 0;
 
@@ -41,14 +56,14 @@
         align-items: center;
 
         > li {
-            margin: 0 0 0 32px;
+            //margin: 0 0 0 32px;
         }
 
-        li:last-child ul {
-            left: auto;
-            right: 0;
-            text-align: right;
-        }
+        // li:last-child ul {
+        //     left: auto;
+        //     right: 0;
+        //     text-align: right;
+        // }
     }
 
     li {
@@ -70,9 +85,9 @@
     }
 
     a {
-        @include fs(16px);
+        @include fs(18px);
         display: block;
-        color: $color-0;
+        color: $color-2;
         text-decoration: none;
         transition: $transition-1;
 

@@ -4,7 +4,7 @@
         sessionStorage.fonts = true;
       },
       google: {
-        families: ['Open+Sans:300,400,400i,500,600,700']
+        families: ['Inter:wght@200;300;400;600', 'Amiri:ital,wght@0,400;0,700;1,400;1,700']
       },
       timeout: 2000
     };

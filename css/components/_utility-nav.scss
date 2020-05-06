@@ -1,0 +1,21 @@
+.utility-nav {
+    background: $color-1;
+    height: 3em;
+
+    .container {
+        padding: 0;
+        height: 100%;
+    }
+
+    .group {
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 1em;
+    }
+}

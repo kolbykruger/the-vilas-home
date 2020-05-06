@@ -1,19 +1,29 @@
 .header {
+    height: 10em;
 
     .container {
         position: relative;
         max-width: $container-width;
         width: 100%;
+        padding: 0;
     }
 
     .group {
         justify-content: space-between;
         align-items: flex-end;
+        height: 6em;
     }
 
     .logo {
         width:100%;
         max-width: 240px;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        z-index: 10;
 
         a {
             display: block;

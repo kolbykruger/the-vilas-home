@@ -84,8 +84,10 @@ h3 {
 h1,
 h2,
 h3 {
+    font-family: $font-1;
     margin: 0 0 0.25em;
     width: 100%;
+    color: $color-2;
 }
 
 ol,

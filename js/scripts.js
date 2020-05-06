@@ -43,7 +43,7 @@ $('.carousel .group').flickity({
     adaptiveHeight: false,
     cellAlign: 'center',
     prevNextButtons: false,
-    pageDots: true,
+    pageDots: false,
     imagesLoaded: true,
     autoPlay: 8000,
 });

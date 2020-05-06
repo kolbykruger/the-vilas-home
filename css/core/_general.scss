@@ -64,21 +64,21 @@ h1 {
     @include fluid('font-size', 2.5rem, 3.5rem);
     //@include fluid('line-height', 1em, 1.2em);
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h2 {
     @include fluid('font-size', 1.75rem, 2.5rem);
     //@include fluid('line-height', 1em, 1.2em);
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h3 {
     @include fluid('font-size', 1.25rem, 1.75rem);
     //@include fluid('line-height', 1em, 1.2em);
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h1,

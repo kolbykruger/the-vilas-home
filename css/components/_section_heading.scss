@@ -1,6 +1,25 @@
-.section_heading{
+.section-heading{
     width: 100%;
     max-width: $container-width;
     margin: 0 auto;
     padding:0 1em;
+    text-align: center;
+
+    h2 {
+        position: relative;
+        padding-bottom: 0.25em;
+        margin-bottom: 0.35em;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            width: 50px;
+            margin: 0 auto;
+            height: 3px;
+            background: $color-1;
+        }
+    }
 }

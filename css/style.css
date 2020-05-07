@@ -813,6 +813,7 @@ hr::before {
   position: absolute;
   top: 0;
   left: 0;
+  top: 1em;
 }
 .header .logo a {
   display: block;
@@ -1223,6 +1224,15 @@ footer .social-icons a {
 }
 footer .group-copy {
   margin-top: 1em;
+}
+footer .button-secondary i {
+  transition: 250ms ease;
+}
+footer .button-secondary:hover, footer .button-secondary:focus {
+  background: #fff;
+}
+footer .button-secondary:hover i, footer .button-secondary:focus i {
+  transform: translate(0.5em, 0);
 }
 
 @media (max-width: 1200px) {
@@ -2406,7 +2416,7 @@ p.simplesearch-results,
   padding: 1.5em 0;
 }
 .introduction .container {
-  max-width: 960px;
+  max-width: 1100px;
   padding: 1em;
   text-align: center;
 }

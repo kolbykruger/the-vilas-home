@@ -133,6 +133,22 @@ footer {
         margin-top: 1em;
     }
 
+    .button-secondary {
+
+        i {
+            transition: $transition-1;
+        }
+
+        &:hover,
+        &:focus {
+            background: #fff;
+
+            i {
+                transform: translate(0.5em, 0);
+            }
+        }
+    }
+
 }
 @media (max-width: 1200px) {
     .footer .tagline {

@@ -1,63 +1,53 @@
 .testimonials {
-    padding-top: 3em;
-    margin-bottom: 0;
 
     &-widget {
-        background:$color-1;
-        box-shadow: 0 10px 50px rgba(27,31,35,0.07);
+        padding-bottom: 1em;
 
         .container {
-            position: relative;
-            padding: 0;
-            background: $color-2;
-            padding: 6em;
-            transform: translate(0, -6em);
-            border-radius: 0 0 0 5em;
-
-            &::after {
-                content: '';
-                position: absolute;
-                left: 100%;
-                top: 0;
-                bottom: 0;
-                width: 300%;
-                background: $color-2;
-            }
+            max-width: 800px;
         }
     }
 
     .testimonial {
         font-family: $font-1;
-        max-width: 800px;
+        width: 100%;
         margin: 0 auto;
+        padding: 3em;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .quotee-image {
+        max-width: 200px;
+        margin-right: 2em;
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+        }
     }
 
     .quote {
         font-style: italic;
-        font-size: 3rem;
-        color: #fff;
+        font-size: 2rem;
         line-height: 1.2;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
+        color: $color-2;
     }
 
     .quotee {
-        font-size: 2rem;
-        color: $color-1;
+        font-size: 1.6rem;
         display: flex;
         align-items: center;
+        color: $color-1;
 
-        img {
-            max-width: 120px;
-            border-radius: 50%;
+        span {
+            color: $color-0;
+            margin-left: 0.25em;
         }
+    }
 
-        &-details {
-            margin-left: 1em;
-            color: #fff;
-
-            span {
-                opacity: 0.45;
-            }
-        }
+    .flickity-viewport {
+        width: 100%;
     }
 }

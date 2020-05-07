@@ -1,37 +1,218 @@
 footer {
     width: 100%;
-    background: $color-1;
+    background: $color-2;
     padding: 1em;
+    margin-top: 6em;
+
+    .lower-cta {
+        background: $color-1;
+        max-width: $container-width;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        margin-top: -5em;
+
+        .container {
+            padding: 2em 3em;
+        }
+
+        .group {
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        h2,
+        .buttons {
+            width: auto;
+            color: #fff;
+            margin: 0;
+        }
+    }
 
     .container {
-        max-width: $container-width;
-        width: 100%;
-        text-align: center;
-        color: $color-0;
+        color: #fff;
+        padding: 0;
     }
 
     a {
-        color: $color-0;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            color: $color-1;
+        }
     }
 
-    .address {
-        margin: 0 auto 5px;
+    a:not(.button) {
+        text-decoration: none;
+        transition: $transition-1;
     }
 
-    .contact {
-        margin: 0 auto 5px;
+    .group {
+        justify-content: space-between;
+
+        .group {
+            margin: 0;
+        }
     }
 
-    .copyright {
-        margin: 0 auto 5px;
-    }
-
-    .ewd {
-        margin: 0 auto 5px;
-        width: 200px;
+    .logo {
+        max-width: 200px;
+        width: 100%;
 
         img {
             width: 100%;
         }
+
+        p {
+            opacity: 0.5;
+            font-size: 1rem;
+        }
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    .section {
+        margin-left: 6em;
+
+        h3 {
+            font-size: 1.6rem;
+            color: #fff;
+        }
+
+        a {
+            font-size: 1rem;
+            margin-bottom: 1em;
+        }
+
+        a {
+            display: block;
+            margin: 0.35em 0;
+            line-height: 1.5;
+            opacity: 0.5;
+            color: inherit;
+            transition: $transition-1;
+
+            &:hover,
+            &:focus {
+                opacity: 1;
+                color: $color-1;
+            }
+        }
+
+        address {
+            opacity: 0.5;
+            margin-bottom: 1em;
+            line-height: 1.6;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 1;
+
+        li {
+            padding: 0;
+        }
+    }
+
+    .social-icons {
+        font-size: 1.25rem;
+        a {
+            color: #fff;
+        }
+    }
+
+    .group-copy {
+        margin-top: 1em;
+    }
+
+}
+@media (max-width: 1200px) {
+    .footer .tagline {
+        max-width: 100%;
+        flex: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        margin-top: 3em;
+    }
+    .footer .tagline {
+        margin: 0em auto 3em;
+    }
+    .footer .section {
+        margin-left: 0;
+        margin: 0;
+        padding: 1em;
+        width: 50%;
+        text-align: center;
+    }
+
+    .footer .section h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer .links {
+        width: 100%;
+    }
+
+    .footer h2 {
+        text-align: center;
+    }
+
+    .footer .buttons {
+        justify-content: center;
+    }
+
+    .footer .social-icons {
+        margin-top: 1em;
+    }
+    .footer .section a {
+        margin: 0;
+        padding: 0.35em 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer .logo {
+        margin: 0 auto;
+    }
+    .footer .social-icons {
+        display: flex;
+        width: 100%;
+        order: -1;
+        margin-top: 0;
+        margin-bottom: 2em;
+        font-size: 1.5rem;
+    }
+    .footer .container > .group:last-of-type {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .footer .section {
+        display: none;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .footer .group {
+        text-align: center;
+        justify-content: center;
+    }
+    .footer .tagline {
+        margin: 0em auto 1em;
+    }
+    .footer .container > .group:last-of-type {
+        padding-top: 0;
+        margin-top: 1.5em;
     }
 }

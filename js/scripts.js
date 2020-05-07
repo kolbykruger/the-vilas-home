@@ -123,5 +123,17 @@ $('.carousel .group').flickity({
     autoPlay: 8000,
 });
 
+//Testimonials
+$('.testimonials .group').flickity({
+    cellSelector: '.testimonial',
+    wrapAround: true,
+    adaptiveHeight: false,
+    cellAlign: 'center',
+    prevNextButtons: false,
+    pageDots: true,
+    imagesLoaded: true,
+    autoPlay: 6000,
+});
+
 //Universal Tables
 $('table').wrap("<div class='universal-table'></div>");

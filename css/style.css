@@ -814,6 +814,7 @@ hr::before {
   top: 0;
   left: 0;
   top: 1em;
+  left: 1em;
 }
 .header .logo a {
   display: block;

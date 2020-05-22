@@ -23,7 +23,7 @@
             overflow: hidden;
 
             a {
-                @include fs(18px);
+                @include fs(14px);
                 padding: 0.75em 1em;
                 margin: 0;
                 color: #fff;
@@ -44,7 +44,7 @@
 
         > li {
             margin: 0 0 0 32px;
-            font-family: $font-1;
+            font-family: $font-0;
         }
 
         li:last-child ul {
@@ -73,11 +73,23 @@
     }
 
     a {
-        @include fs(24px);
+        @include fs(18px);
         display: block;
         color: $color-2;
         text-decoration: none;
         transition: $transition-1;
+
+        &.button {
+            padding: 0.5em 0.75em;
+            color: #fff;
+            background: $color-2;
+
+            &:hover,
+            &:focus {
+                background: $color-1;
+                color: #fff;
+            }
+        }
 
         &:hover,
         &:focus {

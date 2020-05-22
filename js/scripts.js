@@ -85,6 +85,30 @@ let blogCategories = {
     }
 }.init();
 
+//Fixed header
+document.addEventListener('DOMContentLoaded', function() {
+    var header = document.querySelector('.header');
+    var top = header.offsetTop;
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > top) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    })
+})
+
+//Video Scroll
+var videoScroll = document.querySelector('.video-scroll');
+if (videoScroll) {
+    videoScroll.addEventListener('click', function() {
+        window.scroll({
+            top: document.querySelector('.autoplayer').getBoundingClientRect().bottom + window.scrollY - 50,
+            behavior: 'smooth'
+        });
+    })
+}
+
 //Responsive iFrame
 $('iframe[src*="youtube"],iframe[src*="vimeo"]').wrap('<div class="responsive-iframe"/>');
 

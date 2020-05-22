@@ -1,5 +1,9 @@
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
     z-index: 10;
 
     .container {
@@ -7,10 +11,23 @@
         max-width: $container-width;
         width: 100%;
         padding: 0 1em;
-        height: 7em;
+        height: 5em;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        transition: $transition-1;
+    }
+
+    &.sticky {
+        box-shadow: $box-shadow-3;
+
+        .logo {
+            max-width: 175px;
+        }
+
+        > .container {
+            height: 3.5em;
+        }
     }
 
     .group {
@@ -24,10 +41,11 @@
         position: absolute;
         top: 0;
         left: 0;
+        transition: $transition-1;
 
         //for horz
-        top: 1em;
-        left: 1em;
+        top: -2em;
+        left: 0em;
 
         a {
             display: block;

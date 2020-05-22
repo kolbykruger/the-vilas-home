@@ -800,6 +800,7 @@ hr::before {
   z-index: 10;
 }
 .header .container {
+  position: relative;
   max-width: 1400px;
   width: 100%;
   padding: 0 1em;
@@ -829,7 +830,7 @@ hr::before {
   top: 0;
   left: 0;
   transition: 250ms ease;
-  top: 0em;
+  top: -2em;
   left: 0em;
 }
 .header .logo a {
@@ -1934,6 +1935,44 @@ input[type=submit].button {
   }
 }
 
+.chat-widget-placeholder {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  padding: 1.25em;
+  background: #833C38;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.chat-widget-placeholder i {
+  font-size: 1.75rem;
+}
+.chat-widget-placeholder span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: calc(100% + 0.5em);
+  bottom: 0;
+  color: #fff;
+  background: #3B3B3B;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.11), 0 3px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 1em;
+  min-width: 250px;
+  padding: 0.5em;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  transition: 250ms ease;
+}
+.chat-widget-placeholder:hover span, .chat-widget-placeholder:focus span {
+  opacity: 1;
+  z-index: 9999;
+}
+
 .responsive-iframe {
   position: relative;
   padding-top: 56.25%;
@@ -2569,6 +2608,10 @@ p.simplesearch-results,
 .introduction h1 i {
   font-weight: 600;
   color: #833C38;
+}
+.introduction .intro-testimonial {
+  max-width: 600px;
+  margin: 2em auto 3em;
 }
 @media (max-width: 768px) {
   .introduction {

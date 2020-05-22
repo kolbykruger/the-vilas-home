@@ -958,6 +958,15 @@ hr::before {
   text-decoration: none;
   transition: 250ms ease;
 }
+.nav a.button {
+  padding: 0.5em 0.75em;
+  color: #fff;
+  background: #3B3B3B;
+}
+.nav a.button:hover, .nav a.button:focus {
+  background: #833C38;
+  color: #fff;
+}
 .nav a:hover, .nav a:focus {
   color: #833C38;
 }
@@ -1516,7 +1525,7 @@ footer .button-secondary:hover i, footer .button-secondary:focus i {
 }
 .button i + span,
 .button span + i {
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 .button-reverse {
   background: #fff;

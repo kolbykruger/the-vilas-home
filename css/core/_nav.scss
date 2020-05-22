@@ -79,6 +79,18 @@
         text-decoration: none;
         transition: $transition-1;
 
+        &.button {
+            padding: 0.5em 0.75em;
+            color: #fff;
+            background: $color-2;
+
+            &:hover,
+            &:focus {
+                background: $color-1;
+                color: #fff;
+            }
+        }
+
         &:hover,
         &:focus {
             color: $color-1;

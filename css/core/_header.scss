@@ -11,10 +11,7 @@
         max-width: $container-width;
         width: 100%;
         padding: 0 1em;
-        height: 5em;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        height: 6em;
         transition: $transition-1;
     }
 
@@ -22,7 +19,7 @@
         box-shadow: $box-shadow-3;
 
         .logo {
-            max-width: 175px;
+            max-width: 190px;
         }
 
         > .container {
@@ -32,20 +29,14 @@
 
     .group {
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
+        height: 100%;
     }
 
     .logo {
         width:100%;
         max-width: 240px;
-        position: absolute;
-        top: 0;
-        left: 0;
         transition: $transition-1;
-
-        //for horz
-        top: -2em;
-        left: 0em;
 
         a {
             display: block;

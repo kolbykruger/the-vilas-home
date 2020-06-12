@@ -382,7 +382,6 @@ https://flickity.metafizzy.co
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -804,34 +803,27 @@ hr::before {
   max-width: 1400px;
   width: 100%;
   padding: 0 1em;
-  height: 5em;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  height: 6em;
   transition: 250ms ease;
 }
 .header.sticky {
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.11), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 .header.sticky .logo {
-  max-width: 175px;
+  max-width: 190px;
 }
 .header.sticky > .container {
   height: 3.5em;
 }
 .header .group {
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  height: 100%;
 }
 .header .logo {
   width: 100%;
   max-width: 240px;
-  position: absolute;
-  top: 0;
-  left: 0;
   transition: 250ms ease;
-  top: -2em;
-  left: 0em;
 }
 .header .logo a {
   display: block;
@@ -891,7 +883,6 @@ hr::before {
 .nav {
   text-align: center;
   -webkit-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   z-index: 10;
 }
@@ -1508,7 +1499,6 @@ footer .button-secondary:hover i, footer .button-secondary:focus i {
   transition: 150ms ease;
   text-decoration: none;
   -webkit-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   cursor: pointer;
 }
@@ -2438,7 +2428,6 @@ p.simplesearch-results,
 
 .carousel {
   -webkit-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .carousel .container {
@@ -2451,7 +2440,6 @@ p.simplesearch-results,
 }
 .carousel .slide {
   -webkit-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 100%;
   position: relative;
@@ -2459,13 +2447,11 @@ p.simplesearch-results,
 }
 .carousel .slide a {
   -webkit-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   text-decoration: none;
 }
 .carousel .slide img {
   -webkit-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 100%;
   height: auto;
@@ -2639,7 +2625,6 @@ p.simplesearch-results,
   width: 100%;
   height: auto;
   -webkit-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   overflow: hidden;
 }

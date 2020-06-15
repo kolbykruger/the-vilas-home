@@ -1880,20 +1880,20 @@ input[type=submit].button {
   z-index: 9999;
 }
 
-.map {
-  margin-top: 0;
+.location {
+  position: relative;
+  background-image: url("../images/vilas-home-front.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 60vh;
 }
-.map .container {
-  width: 100%;
-  max-width: 100%;
+.location .container {
   padding: 0;
+  max-width: 100%;
 }
-.map iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 400px;
-  filter: grayscale(1);
+.location .text {
+  display: flex;
+  align-items: center;
 }
 
 .responsive-iframe {

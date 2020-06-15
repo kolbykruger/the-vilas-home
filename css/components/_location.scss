@@ -1,0 +1,18 @@
+.location {
+    position: relative;
+    background-image: url('../images/vilas-home-front.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 60vh;
+
+    .container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+
+    }
+}

@@ -14,6 +14,8 @@
         .button {
             display: flex;
             height: 100%;
+            min-width: 160px;
+            justify-content: center;
         }
     }
 }
@@ -105,7 +107,7 @@
     }
 
     a {
-        @include fs(16px);
+        @include fs(18px);
         display: block;
         font-weight: 600;
         color: $color-2;

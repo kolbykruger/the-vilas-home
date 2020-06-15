@@ -37,39 +37,29 @@
 
     <header class="header" role="banner">
 
-        <div class="utility-nav">
-            <div class="container">
-                <div class="group">
-                    <div>
-                        <a href="tel:#">Call a resident (000) 000-0000</a>
-                        <a href="tel:#">Contact Us (000) 000-0000</a>
-                        <a href="tel:#">Schedule a Tour</a>
+        <div class="container">
+
+            <div class="bar">
+                <div class="logo">
+                    <a href="index.html" class="force">
+                        <img src="images/the-vilas-home-rev1.svg" title="Return Home" alt="Logo">
+                    </a>
+                </div>
+                <div class="bar-numbers">
+                    <div class="bar-number">
+                        <p>Call a resident</p>
+                        <p><a href="#">(800) 000-0000</a></p>
+                    </div>
+                    <div class="bar-number">
+                        <p>Contact Us</p>
+                        <p><a href="#">(800) 000-0000</a></p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
-
-            <div class="group">
-
-                <div class="logo">
-                    <a href="index.html" class="force">
-                        <img src="images/the-vilas-home-logo.svg" title="Return Home" alt="Logo">
-                    </a>
-                </div>
-
+            <div class="navigation">
                 <nav class="nav" role="navigation" aria-label="Site Menu">
-
-                    <ul>
-                        <li class="trigger"><a href="#">About Us <i class="fas fa-caret-down" aria-hidden="true"></i></a>
-                            <ul class="drop">
-                                <li><a href="#">Our History</a></li>
-                                <li><a href="#">Our Staff</a></li>
-                                <li><a href="#">Our Building</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </li>
+                    <ul class="top">
                         <li class="trigger">
                             <a href="#">Amenities & Services  <i class="fas fa-caret-down" aria-hidden="true"></i></a>
                             <ul class="drop">
@@ -85,10 +75,22 @@
                                 <li><a href="#">Link</a></li>
                             </ul>
                         </li>
-                        <li><a class="button" href="#"><span>Contact Us</span><i class="far fa-arrow-right"></i></a></li>
+                        <li class="trigger"><a href="#">About Us <i class="fas fa-caret-down" aria-hidden="true"></i></a>
+                            <ul class="drop">
+                                <li><a href="#">Our History</a></li>
+                                <li><a href="#">Our Staff</a></li>
+                                <li><a href="#">Our Building</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <ul class="buttons">
+                        <li><a class="button button-normal" href="#"><span>Contact Us</span></a></li>
+                        <li><a class="button button-normal" href="#"><span>Schedule a Tour</span></a></li>
                     </ul>
                 </nav>
-
             </div>
         </div>
     </header>
@@ -97,25 +99,81 @@
 
         <section class="autoplayer">
             <div class="container">
-                <iframe src="https://player.vimeo.com/video/337284077?background=1" width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                <button class="video-scroll">
-                    <span class="scroll-indicator">
-                        <i class="fal fa-chevron-down"></i>
-                    </span>
-                </button>
+                <!-- <iframe src="https://player.vimeo.com/video/337284077?background=1" width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+                <video autoplay muted loop>
+                    <source src="images/senior-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="inquiry-form">
+                    <div class="form-container">
+                        <h1>Premier Senior Care</h1>
+                        <p class="form-title">
+                            Let us help you schedule a tour, or find more information!
+                        </p>
+                        <div class="form">
+                            <div>
+                                <label for="name">
+                                    <input type="text" placeholder="First Name">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="name">
+                                    <input type="text" placeholder="Last Name">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="name">
+                                    <input type="text" placeholder="Email Address">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="name">
+                                    <input type="text" placeholder="Phone">
+                                </label>
+                            </div>
+                            <div class="buttons">
+                                <input class="button" type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="introduction">
+        <section class="features">
             <div class="container">
-                <h1>Since 1999, we've made it our mission to care for seniors and make <i>our</i> home, <i>their</i> home. </h1>
-                <div class="intro-testimonial">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9W44NWYwa1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>Video testimonial will go here.</p>
+                <div class="section-heading">
+                    <h2>Senior Living For You</h2>
+                    <p>Since 1888, we've made it our mission to provide the best senior care.</p>
                 </div>
-                <div class="buttons buttons-center">
-                    <a href="#" class="button">Learn More About Us</a>
-                    <a href="#" class="button button-secondary"><span>Schedule a Tour</span><i class="far fa-arrow-right"></i></a>
+                <div class="group">
+                    <a href="#" class="item">
+                        <div class="cover">
+                            <img src="images/collage-2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Meals</h3>
+                            <p>We offer meal services! </p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="cover">
+                            <img src="images/vilas-home-front.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Rooms & Floorplans</h3>
+                            <p>Explore our different rooms & floorplans!</p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="cover">
+                            <img src="images/collage-3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Activities</h3>
+                            <p>There's lots of activities to do near us!</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -123,166 +181,56 @@
         <section class="services">
             <div class="container">
                 <div class="section-heading">
-                    <h2>What We Offer</h2>
-                    <p>We have a wide variety of services that will keep you or your loved one happy & healthy!</p>
+                    <h2>We provide the absolute best care to our seniors</h2>
+                    <p>We have a warm, safe, and comfortable environment so our residents can maximize their independence.</p>
                 </div>
                 <div class="group">
-                    <div class="service-actions">
-                        <button class="service-action service-active" data-id="1">
-                            <span class="icon"><i class="fad fa-user-circle"></i></span>
-                            24 hour supervision
-                        </button>
-                        <button class="service-action" data-id="2">
-                            <span class="icon"><i class="fad fa-users-medical"></i></span>
-                            Medical management
-                        </button>
-                        <button class="service-action" data-id="3">
-                            <span class="icon"><i class="fad fa-wheelchair"></i></span>
-                            Onsite rehabilitation
-                        </button>
-                        <button class="service-action" data-id="4">
-                            <span class="icon"><i class="fad fa-hand-heart"></i></span>
-                            Case management
-                        </button>
-                        <button class="service-action" data-id="5">
-                            <span class="icon"><i class="fad fa-chess-king-alt"></i></span>
-                            Daily activities
-                        </button>
-                        <button class="service-action" data-id="6">
-                            <span class="icon"><i class="fad fa-chair"></i></span>
-                            Furnished rooms
-                        </button>
-                        <div class="buttons buttons-center">
-                            <a href="#" class="button button-text button-text-white button-small">Explore our services</a>
-                        </div>
-                    </div>
-                    <div class="service-panels">
-                        <div class="service-panel service-active" data-id="1">
-                            <div class="image">
-                                <img src="images/collage-1.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="description">
-                                    <h3>24 hour supervision</h3>
-                                    <p>We offer a variety of medical assistance services, from medication management and passing, special diets, dementia care, hospice and end of life services, and daily medical needs.</p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="#" class="button button-text button-text-white"><span>Learn more</span><i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-panel" data-id="2">
-                            <div class="image">
-                                <img src="images/collage-2.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="description">
-                                    <h3>Medical management</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nisi voluptatibus ipsam sit voluptatem beatae natus et blanditiis soluta! Non!</p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="#" class="button button-text button-text-white"><span>Learn more</span><i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-panel" data-id="3">
-                            <div class="image">
-                                <img src="images/collage-3.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="description">
-                                    <h3>Onsite rehabilitation</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nisi voluptatibus ipsam sit voluptatem beatae natus et blanditiis soluta! Non!</p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="#" class="button button-text button-text-white"><span>Learn more</span><i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-panel" data-id="4">
-                            <div class="image">
-                                <img src="images/collage-1.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="description">
-                                    <h3>Case management</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nisi voluptatibus ipsam sit voluptatem beatae natus et blanditiis soluta! Non!</p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="#" class="button button-text button-text-white"><span>Learn more</span><i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-panel" data-id="5">
-                            <div class="image">
-                                <img src="images/collage-2.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="description">
-                                    <h3>Daily activities</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nisi voluptatibus ipsam sit voluptatem beatae natus et blanditiis soluta! Non!</p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="#" class="button button-text button-text-white"><span>Learn more</span><i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-panel" data-id="6">
-                            <div class="image">
-                                <img src="images/collage-3.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="description">
-                                    <h3>Furnished rooms</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nisi voluptatibus ipsam sit voluptatem beatae natus et blanditiis soluta! Non!</p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="#" class="button button-text button-text-white"><span>Learn more</span><i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-        </section>
+                    <a href="#" class="service-action service-active" data-id="1">
+                        <span class="icon"><i class="fad fa-user-circle"></i></span>
+                        <h3>24 hour supervision</h3>
+                    </a>
+                    <a href="#" class="service-action" data-id="2">
+                        <span class="icon"><i class="fad fa-users-medical"></i></span>
+                        <h3>Medical management</h3>
+                    </a>
+                    <a href="#" class="service-action" data-id="3">
+                        <span class="icon"><i class="fad fa-wheelchair"></i></span>
+                        <h3>Onsite rehabilitation</h3>
+                    </a>
+                    <a href="#" class="service-action" data-id="4">
+                        <span class="icon"><i class="fad fa-hand-heart"></i></span>
+                        <h3>Case management</h3>
+                    </a>
+                    <a href="#" class="service-action" data-id="5">
+                        <span class="icon"><i class="fad fa-chess-king-alt"></i></span>
+                        <h3>Daily activities</h3>
+                    </a>
+                    <a href="#" class="service-action" data-id="6">
+                        <span class="icon"><i class="fad fa-chair"></i></span>
+                        <h3>Furnished rooms</h3>
+                    </a>
+                    <a href="#" class="service-action" data-id="4">
+                        <span class="icon"><i class="fad fa-hand-heart"></i></span>
+                        <h3>Case management</h3>
+                    </a>
+                    <a href="#" class="service-action" data-id="3">
+                        <span class="icon"><i class="fad fa-wheelchair"></i></span>
+                        <h3>Onsite rehabilitation</h3>
+                    </a>
+                    <a href="#" class="service-action" data-id="2">
+                        <span class="icon"><i class="fad fa-users-medical"></i></span>
+                        <h3>Medical management</h3>
+                    </a>
+                    <a href="#" class="service-action service-active" data-id="1">
+                        <span class="icon"><i class="fad fa-user-circle"></i></span>
+                        <h3>24 hour supervision</h3>
+                    </a>
 
-        <section class="collage">
-            <div class="container">
-                <div class="group">
-                    <div class="collage-image collage-image-1">
-                        <a href="#">
-                            <img src="images/collage-2.jpg" alt="">
-                            <div class="info">
-                                <h3>Meals</h3>
-                                <div class="arrow">
-                                    <i class="far fa-long-arrow-right"></i>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="buttons buttons-center">
+                        <a href="#" class="button button-text button-small"><span>Explore all of our services</span><i class="far fa-long-arrow-right"></i></a>
                     </div>
-                    <div class="collage-image collage-image-2">
-                        <a href="#">
-                            <img src="images/vilas-home-front.jpg" alt="">
-                            <div class="info">
-                                <h3>Rooms & Floorplans</h3>
-                                <div class="arrow">
-                                    <i class="far fa-long-arrow-right"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="collage-image collage-image-3">
-                        <a href="#">
-                            <img src="images/collage-3.jpg" alt="">
-                            <div class="info">
-                                <h3>Activities</h3>
-                                <div class="arrow">
-                                    <i class="far fa-long-arrow-right"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </section>

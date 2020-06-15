@@ -2,7 +2,10 @@ footer {
     width: 100%;
     background: $color-2;
     padding: 1em;
-    margin-top: 6em;
+
+    #home & {
+        margin-top: -3em;
+    }
 
     .lower-cta {
         background: $color-1;

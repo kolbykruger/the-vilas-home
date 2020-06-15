@@ -815,7 +815,7 @@ hr::before {
   flex: 1;
 }
 .header.sticky > .container {
-  height: 4.5em;
+  height: 5em;
 }
 .header.sticky > .container .navigation {
   transform: scale(0);

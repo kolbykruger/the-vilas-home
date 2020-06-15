@@ -1,7 +1,33 @@
+.navigation {
+    background: $color-grey-1;
+
+    ul {
+
+        li {
+            height: 100%;
+
+            &:last-of-type .button {
+                background: $color-1;
+            }
+        }
+
+        .button {
+            display: flex;
+            height: 100%;
+        }
+    }
+}
+
 .nav {
     text-align: center;
     user-select: none;
     z-index: 10;
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
 
     ul {
         overflow: visible;
@@ -41,22 +67,24 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        width: auto;
 
-        > li {
-            margin: 0 0 0 32px;
+        &:not(.buttons) > li {
+            margin: 0 32px 0 0;
             font-family: $font-0;
         }
 
-        li:last-child ul {
-            left: auto;
-            right: 0;
-            text-align: right;
-        }
+        // li:last-child ul {
+        //     left: auto;
+        //     right: 0;
+        //     text-align: right;
+        // }
     }
 
     li {
         position: relative;
-        display: block;
+        display: flex;
+        align-items: center;
 
         &.open {
 
@@ -65,16 +93,21 @@
             }
 
             ul {
-                top: calc(100% + 4px);
+                top: 100%;
                 opacity: 1;
                 z-index: 10;
+
+                li, a {
+                    width: 100%;
+                }
             }
         }
     }
 
     a {
-        @include fs(18px);
+        @include fs(16px);
         display: block;
+        font-weight: 600;
         color: $color-2;
         text-decoration: none;
         transition: $transition-1;
@@ -97,7 +130,7 @@
         }
 
         i {
-            @include fs(14px);
+            @include fs(16px);
             cursor: pointer;
             //margin: 0 0 0 6px;
             opacity: 0.5;

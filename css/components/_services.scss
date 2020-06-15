@@ -1,150 +1,44 @@
 .services {
-    background: $color-2;
-    //background: linear-gradient(to right, transparent, #fff, transparent);
-    box-shadow: 0 10px 50px rgba(27,31,35,0.07);
     padding: 3em 0;
+    padding-bottom: 1em;
+    margin-bottom: 0;
 
     .section-heading {
 
-        h2 {
-            color: #fff;
-
-            &::after  {
-                background: #fff;
-            }
-        }
-
-        p {
-            color: rgba(255, 255, 255, 0.75);
-        }
     }
 
     .container {
-        max-width: 1100px;
+
     }
 
     .group {
 
-        > * {
-            padding: 3em;
-        }
-
     }
 
-    .service-actions {
-        flex: 2;
+    .service-action {
+        background: #fff;
+        width: calc(20% - 1em);
+        margin: 0.5em;
+        text-decoration: none;
+        padding: 2em;
+        text-align: center;
+        transition: $transition-1;
+        box-shadow: $box-shadow-3;
 
-        .service-action {
-            background: none;
-            appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-            outline: none;
-            border: none;
-            font-size: 1.5rem;
-            font-family: inherit;
-            cursor: pointer;
-
-            display: inline-flex;
-            align-items: center;
-            width: 100%;
-            padding: 0.5rem;
+        .icon {
+            display: block;
+            font-size: 3rem;
             margin-bottom: 0.25em;
-            border-radius: 0.5em;
-            color: lighten($color-0, 35%);
-            background: rgba(255, 255, 255, 0.125);
-            transition: $transition-1;
-
-            @media (max-width: 1200px) {
-                font-size: 1.125rem;
-                padding: 0.5rem;
-            }
-
-            &.service-active {
-                color: $color-1;
-                background: #fff;
-                box-shadow: $box-shadow-3;
-
-                .icon {
-                    background: lighten($color-1, 40%);
-                    color: $color-1;
-                    font-weight: 600;
-                }
-            }
-
-            .icon {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 2em;
-                height: 2em;
-                color: #fff;
-                background: rgba(255,255,255,0.125);
-                border-radius: 0.5em;
-                margin-right: 0.75em;
-                transition: $transition-1;
-            }
-
-            &:hover,
-            &:focus {
-                box-shadow: $box-shadow-3;
-            }
         }
 
-        .buttons {
-            margin-top: 1em;
-
-            .button {
-                opacity: 0.5;
-
-                &:hover,
-                &:focus {
-                    opacity: 1;
-                }
-            }
+        &:hover,
+        &:focus {
+            transform: scale(1.08);
         }
+
     }
 
-    .service-panels {
-        position: relative;
-        flex: 3;
-
-        .service-panel {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 0;
-            overflow: hidden;
-            transform: translate(0, 1.5em);
-            transition: 0s;
-
-
-            &.service-active {
-                position: relative;
-                z-index: 1;
-                opacity: 1;
-                transform: translate(0, 0);
-                transition: opacity $transition-1, transform $transition-1;
-            }
-
-            h3 {
-                display: none;
-            }
-
-            .description {
-                margin: 1em 0 0;
-                color: #fff;
-            }
-
-            img {
-                border-radius: 0.25em;
-                box-shadow: $box-shadow-2;
-            }
-
-            .buttons {
-                justify-content: flex-end;
-            }
-        }
+    .buttons {
+        margin-top: 2em;
     }
 }

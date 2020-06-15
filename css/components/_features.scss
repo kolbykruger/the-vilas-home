@@ -1,11 +1,14 @@
 .features {
+    padding: 3em 0;
+    margin: 0 auto;
+    background: $color-grey-1;
 
     .container {
 
     }
 
     .group {
-        margin: 0 -2em;
+        margin: 0 -1em;
 
         @media (max-width: 768px) {
             margin: 0;
@@ -20,13 +23,21 @@
         margin: 1em;
         width: calc(33.333% - 2em);
         background: #fff;
-        border-radius: 0.25em;
+        box-shadow: $box-shadow-3;
+        border-radius: 0.5em;
+        overflow: hidden;
         transition: $transition-1;
         overflow: hidden;
 
+        &:hover,
+        &:focus {
+            transform: scale(1.08);
+        }
+
         .info {
             width: 100%;
-            padding: 1em;
+            padding: 1em 2em;
+            text-align: center;
         }
 
         .title {

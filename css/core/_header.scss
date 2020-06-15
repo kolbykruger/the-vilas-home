@@ -12,7 +12,7 @@
         max-width: 100%;
         width: 100%;
         padding: 0;
-        height: 8em;
+        height: 8.5em;
         transition: $transition-1;
         display: flex;
         flex-direction: column;
@@ -46,7 +46,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 0.65em 0;
+        padding: 0.75em 0;
         max-width: $container-width;
         margin: 0 auto;
         width: 100%;
@@ -57,18 +57,18 @@
             flex-flow: row nowrap;
 
             > * {
-                margin-left: 1.5em;
-                padding-left: 1.5em;
+                min-width: 160px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
 
                 &:not(:first-of-type) {
                     border-left: 1px solid lighten($color-0, 35%);
                 }
 
                 p:first-of-type {
-                    font-size: 0.875rem;
+                    font-size: 1rem;
                 }
             }
 

@@ -1203,7 +1203,9 @@ footer {
   width: 100%;
   background: #3B3B3B;
   padding: 1em;
-  margin-top: 6em;
+}
+#home footer {
+  margin-top: -3em;
 }
 footer .lower-cta {
   background: #833C38;
@@ -1733,8 +1735,11 @@ input[type=submit].button {
   margin-top: 2em;
 }
 
+.testimonials {
+  background: #FCF6F9;
+}
 .testimonials-widget {
-  padding-bottom: 1em;
+  padding-bottom: 7em;
 }
 .testimonials-widget .container {
   max-width: 800px;
